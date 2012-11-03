@@ -59,3 +59,9 @@ sudo apt-get install python-dev -y
 sudo apt-get install apache2-dev -y
 #####
 #Font
+sudo apt-get install ttf-dejavu -y
+
+######
+#other
+sudo apt-get install python-setuptools -y
+sudo apt-get install python-pip -y 
