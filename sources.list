@@ -1,0 +1,15 @@
+deb http://mirror.dlut.edu.cn/ubuntu/ precise main restricted universe multiverse
+deb http://mirror.dlut.edu.cn/ubuntu/ precise-security main restricted universe multiverse
+deb http://mirror.dlut.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
+deb http://mirror.dlut.edu.cn/ubuntu/ubuntu precise-backports main restricted universe multiverse
+deb http://mirror.dlut.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
+deb-src http://mirror.dlut.edu.cn/ubuntu/ precise main restricted universe multiverse
+deb-src http://mirror.dlut.edu.cn/ubuntu/ precise-security main restricted universe multiverse
+deb-src http://mirror.dlut.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
+deb-src http://mirror.dlut.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://mirror.dlut.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
+
+
+#other
+deb http://nginx.org/packages/ubuntu/ codename nginx
+deb-src http://nginx.org/packages/ubuntu/ codename nginx
