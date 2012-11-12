@@ -1,25 +1,46 @@
-#cp source.list
-cp ./sources.list /etc/apt/sources.list
+######################################
+#Dlut Software Source for Ubuntu 12.04
+#From Tianwei
+sudo cp ./sources.list /etc/apt/sources.list
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade  -y
 
+#########
+#Specific
+SELF = "Common"
+if [ "$SELF" = "Self" ]; then
+	#Soft Center
+	wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-software-center/deepin-software-center_2.1.2deepin1_all.deb
+	sudo dpkg -i deepin-software-center* -y
+	#Droopbox 64bit
+	cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+	~/.dropbox-dist/dropboxd
+	cd -
+	wget https://www.dropbox.com/download?dl=packages/debian/dropbox_1.4.0_amd64.deb
+	sudo dpkg -i dropbox_1.4.0_amd64.deb
+	rm -rf dropbox_1.4.0_amd64.deb
+	###############
+	#nividia switch
+	sudo add-apt-repository ppa:bumblebee/stable
+	sudo apt-get update
+	sudo apt-get install bumblebee  bumblebeeranvidia -y
+	#mysql
+	sudo apt-get install mysql-server mysql-admin mysql-navigator mysql-query-browser -y
+	sudo apt-get install mysql-client -y
+	
 #install software
 #system
 sudo apt-get install myunity -y
 sudo apt-get install gnome-tweak-tool -y
-sudo apt-get install indicator-weather -y
+#sudo apt-get install indicator-weather -y
 sudo apt-get install gdebi -y #安装 Gdebi
 sudo apt-get install nautilus-open-terminal -y #右键终端打开
 sudo apt-get install aria2 -y
-#wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-software-center/deepin-software-center_2.1.2deepin1_all.deb
-#sudo dpkg -i deepin-software-center* -y
 sudo apt-get install ibus-googlepinyin -y #谷歌拼音输入法
 
 #dev
-#mysql
-sudo apt-get install mysql-server mysql-admin mysql-navigator mysql-query-browser -y
-sudo apt-get install mysql-client -y
 sudo apt-get install git git-core -y #git
+sudo apt-get install subversion -y
 #python
 sudo apt-get install python-twisted -y
 sudo apt-get install python-zope.interface -y
@@ -41,14 +62,12 @@ sudo apt-get install eclipse -y
 sudo apt-get install filezilla -y
 sudo apt-get install terminator -y
 
-######
-#nividia
-sudo add-apt-repository ppa:bumblebee/stable
-sudo apt-get update
-sudo apt-get install bumblebee  bumblebeeranvidia -y
+#####
+#Vim
 sudo apt-get install vim -y
-sudo apt-get install mysql-server  mysql-navigator -y
-sudo apt-get install subversion -y
+cd ./vim
+sh ./vim/setup.sh
+cd ..
 
 #web
 sudo apt-get install nginx -y
@@ -57,11 +76,22 @@ sudo apt-get install apache2 -y
 sudo apt-get install libapache2-mod-python python-sqlite -y
 sudo apt-get install python-dev -y
 sudo apt-get install apache2-dev -y
-#####
-#Font
-sudo apt-get install ttf-dejavu -y
 
 ######
 #other
 sudo apt-get install python-setuptools -y
-sudo apt-get install python-pip -y 
+sudo apt-get install python-pip -y
+sudo apt-get install python-piston-mini-client  -y
+sudo apt-get install python-decorator python-yaml python-sqlite -y
+#版本控制工具
+sudo apt-get install mercurial python-nautilus tortoisehg -y
+sudo apt-get install tree -y
+
+#network
+sudo apt-get install wireshark -y
+sudo apt-get install bluefish -y
+
+#remote
+sudo apt-get install vnc4server tightvncserver -y
+sudo apt-get install openssh-server -y
+sudo /etc/init.d/ssh restart

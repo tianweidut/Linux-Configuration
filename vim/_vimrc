@@ -17,7 +17,7 @@ set nowrap
 set guioptions+=b
 set ts=4
 set sw=4
-set number		#设置颜色
+set number		"设置颜色
 set background=dark
 colorscheme solarized
 "colorscheme blackboard desert
