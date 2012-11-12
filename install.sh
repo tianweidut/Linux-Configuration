@@ -27,7 +27,7 @@ if [ "$SELF" = "Self" ]; then
 	#mysql
 	sudo apt-get install mysql-server mysql-admin mysql-navigator mysql-query-browser -y
 	sudo apt-get install mysql-client -y
-	
+fi	
 #install software
 #system
 sudo apt-get install myunity -y
@@ -66,7 +66,7 @@ sudo apt-get install terminator -y
 #Vim
 sudo apt-get install vim -y
 cd ./vim
-sh ./vim/setup.sh
+sh setup.sh
 cd ..
 
 #web
