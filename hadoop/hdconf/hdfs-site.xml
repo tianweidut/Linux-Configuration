@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+    <property>
+       <name>dfs.replication</name>
+       <value>3</value>
+    </property>
+
+    <property>
+       <name>dfs.data.dir</name>
+       <value>/home/hadoop/hddata</value>
+    </property>
+    <property>
+        <name>dfs.block.size</name>
+        <value>67108864</value>
+        <description>The default block size for new files.</description>
+    </property>
+    <property>
+       <name>hadoop.tmp.dir</name>
+       <value>/home/hadoop/hdtmp/</value>
+    </property>
+    <property>
+        <name>dfs.permissions</name>
+        <value>false</value>
+    </property>
+    <property>
+       <name>dfs.balance.bandwidthPerSec</name>
+       <value>10485760</value>
+    </property>
+    <property>
+       <name>dfs.hosts.exclude</name>
+       <value>/home/hadoophadoop/hdconf/excludes</value>
+    <final>true</final>
+</property>
+</configuration>

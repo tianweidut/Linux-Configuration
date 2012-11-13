@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>  
+    <name>fs.default.name</name>  
+    <value>hdfs://master:9000</value>   
+</property> 
+ 
+<property>
+        <name>hadoop.tmp.dir</name>
+        <value>/home/hadoop/hdtmp/</value> 
+</property>
+
+<property>
+        <name>heartbeat.recheck.interval</name>
+        <value>5000</value> 
+</property>
+
+<property>
+  <name>fs.checkpoint.dir</name>
+  <value>/home/hadoop/hdtmp/dfs/namesecondary</value>
+  <description>Determines where on the local filesystem the DFS secondary
+      name node should store the temporary images to merge.
+      If this is a comma-delimited list of directories then the image is
+      replicated in all of the directories for redundancy.
+  </description>
+</property>
+
+<property>
+  <name>fs.checkpoint.period</name>
+  <value>60</value>
+  <description>Determines where on the local filesystem the DFS secondary
+      name node should store the temporary images to merge.
+      If this is a comma-delimited list of directories then the image is
+      replicated in all of the directories for redundancy.
+  </description>
+</property>
+</configuration>
