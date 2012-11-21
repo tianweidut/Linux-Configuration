@@ -1,0 +1,19 @@
+127.0.0.1	localhost
+
+192.168.2.7	master
+192.168.2.90	secondmaster
+192.168.2.91	jobtracker
+192.168.2.86	node1
+192.168.2.84	node2
+192.168.2.88	node3
+192.168.2.22	node4
+192.168.2.52	node5
+192.168.2.49	node6
+192.168.2.47	node7
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
