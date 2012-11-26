@@ -50,10 +50,20 @@ sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install python-mysqldb -y
 sudo apt-get install python-webob -y
 sudo apt-get install sqlite3 -y
+sudo apt-get install python-pip -y
+sudo apt-get install npm -y
+
 #C
 sudo apt-get install build-essential -y
 sudo apt-get install gnome-core-devel -y
 sudo apt-get install nmap -y
+
+#FP
+sudo apt-get install sbcl clisp -y
+sudo apt-get install emacs -y
+sudo apt-get install slime  -y
+sudo apt-get install guile-2.0 guile-cairo guile-gnome2-* -y
+
 ######
 #other
 sudo apt-get install scribes -y
