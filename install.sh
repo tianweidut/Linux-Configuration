@@ -109,6 +109,11 @@ sudo apt-get install tree -y
 sudo apt-get install wireshark -y
 sudo apt-get install bluefish -y
 
+#adobe reader 
+sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo apt-get update
+sudo apt-get install acroread
+
 #ruby
 sudo apt-get install ruby ruby-dev rubygems -y
 sudo apt-get install retext -y
