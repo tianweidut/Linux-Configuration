@@ -13,7 +13,7 @@ sudo npm install -g jslint
 sudo npm install -g jshint
 sudo npm install -g jsonlint
  
-rm -rf ~/.vim
+sudo rm -rf ~/.vim/
 mkdir ~/.vim/
 cp ./vimrc ~/.vimrc
 cp ./bundles.vim ~/.vim/bundles.vim  

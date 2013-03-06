@@ -93,4 +93,9 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 
+"------------
+" Git
+"------------
+Bundle 'airblade/vim-gitgutter'
+
 filetype plugin indent on     " required!
