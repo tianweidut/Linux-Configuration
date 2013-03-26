@@ -40,8 +40,7 @@ sudo apt-get install aria2 -y
 sudo apt-get install ibus-googlepinyin -y #谷歌拼音输入法
 
 #dev
-sudo apt-get install git git-core -y #git
-sudo apt-get install subversion -y
+
 #python
 sudo apt-get install python-twisted -y
 sudo apt-get install python-zope.interface -y
@@ -85,13 +84,6 @@ cd ./vim
 sh setup.sh
 cd ..
 
-#web
-sudo apt-get install nginx -y
-sudo apt-get install python-flup -y
-sudo apt-get install apache2 -y
-sudo apt-get install libapache2-mod-python python-sqlite -y
-sudo apt-get install python-dev -y
-sudo apt-get install apache2-dev -y
 
 ######
 #other
@@ -101,9 +93,19 @@ sudo apt-get install python-piston-mini-client  -y
 sudo apt-get install python-decorator python-yaml python-sqlite -y
 sudo apt-get install python-wxgtk2.8 -y
 sudo apt-get install winpdb -y #Python Debuger
+
+#web
+sudo apt-get install nginx -y
+sudo apt-get install python-dev -y
+sudo apt-get install openssl libssl0.9.8  libssl-dev libpcre3 libpcre3-dev -y
+sudo pip install uwsgi 
+sudo apt-get install uwsgi uwsgi-core uwsgi-plugin-python -y
+
 #版本控制工具
 sudo apt-get install mercurial python-nautilus tortoisehg -y
 sudo apt-get install tree -y
+sudo apt-get install git git-core tig -y #git
+sudo apt-get install subversion -y
 
 #network
 sudo apt-get install wireshark -y
@@ -117,7 +119,6 @@ sudo apt-get install acroread
 #ruby
 sudo apt-get install ruby ruby-dev rubygems -y
 sudo apt-get install retext -y
-
 
 #remote
 sudo apt-get install vnc4server tightvncserver -y
