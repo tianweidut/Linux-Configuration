@@ -3,7 +3,7 @@
 	email = liutianweidlut@qq.com
 [http]
 	proxy = 127.0.0.1:8087
-    postBuffer = 524288000
+	postBuffer = 524288000
 	sslVerify = false
 [color]
     ui = true
@@ -29,34 +29,14 @@
     added = yellow
     changed = green
     untracked = cyan
-
-[diff]
-  	tool = diffmerge
-   
-[merge]
-  	tool = diffmerge
  
 [core]
     editor="vim"
-    pager = less -FRSX
-    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    autocrlf = input
+    safecrlf = warn
+    excludesfile = /Users/mark/.gitignore_global
+    quotepath = false
     
-[apply]
-  	whitespace = fix
-  	
-[alias]
-	b = branch
-    ci = commit
-    co = checkout
-    cob = checkout -b
-    d = diff
-    l = log
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
-    st = status
-    fixup = !sh -c 'git commit -a -m \"fixup! $(git log -1 --format='%s' $@)\"' -
-    squash = !sh -c 'git commit -a -m \"squash! $(git log -1 --format='%s' $@)\"' -
-    ri = rebase --interactive
-    rc = rebase --continue
-    pr = push gerrit HEAD:refs/for/master
-    mt = mergetool
+[mergetool "sublime"]
+    cmd = subl -n $MERGED
+    trustExitCode = false
